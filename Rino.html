@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rino.lol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            color: rgb(71, 47, 206);
+            animation: fadeIn 1s ease-in;
+            cursor: url('https://icons8.com/icon/14315/hand-cursor'), auto; /* Replace with the actual URL of your middle finger cursor */
+        }
+
+        /* Blurry background */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images7.alphacoders.com/134/1349474.png') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(10px);
+            z-index: -1; /* Ensures background is behind content */
+        }
+
+        .about-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #5a2ef8;
+            animation: pulse 3s infinite;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+            color: #5a2ef8;
+            animation: textGlow 1.5s ease-in-out infinite alternate;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 1.5rem; /* Smaller size for icons */
+            color: #5a2ef8;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .social-icons img {
+            width: 30px; /* Size for image icons */
+            height: 30px; /* Size for image icons */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover,
+        .social-icons img:hover {
+            color: #db3434;
+            transform: scale(1.3); /* Pop-out effect */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        @keyframes textGlow {
+            from { text-shadow: 0 0 10px #5a2ef8, 0 0 20px #5a2ef8; }
+            to { text-shadow: 0 0 20px #5a2ef8, 0 0 30px #5a2ef8; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="background"></div> <!-- Blurred background -->
+
+<div class="about-container">
+    <img src="C:\Users\Rino\Desktop\Rino Website\files\a_ada6a8d736f954ebc38031799068aa65.gif" alt="Profile Picture" class="profile-pic">
+    <h1>./Rino</h1>
+    <p>Hi I'm Rino , I'm a Malware Dev , a BugBountyHunter , a Malware Analyst , and more , I'm the maker of a RAT called VampireRAT. For buying it, you can find me here ..</p>
+    <div class="social-icons">
+        <a href="https://instagram.com/0xrino">
+            <img src="C:\Users\Rino\Desktop\Rino Website\files\instagram.png" text="Instagram">
+        <a href="https://discord.com/channels/@me/1294682247915503617">
+            <img src="C:\Users\Rino\Desktop\Rino Website\files\discord.png" text="Discord">
+        </a>
+    </div>
+</div>
+</body>
+</html>
